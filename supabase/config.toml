@@ -1,0 +1,5 @@
+[functions.cometchat-auth-token]
+verify_jwt = true
+
+[functions.cometchat-connection-moderation]
+verify_jwt = false
