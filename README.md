@@ -1,18 +1,103 @@
-PS C:\Users\nitis\OneDrive\Desktop\HackMate> Get-Content README.md
-# React + Vite
+# HackMate 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### AI-powered Hackathon Team Finder
 
-Currently, two official plugins are available:
+HackMate is a real-time platform that helps students and developers discover compatible teammates, build project teams, and communicate with their teammates in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+https://hackmate-navy.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Repository
 
-## Expanding the ESLint configuration
+https://github.com/Nitishxai/HackMate
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-PS C:\Users\nitis\OneDrive\Desktop\HackMate> 
+## 🎯 Problem
+
+Finding the right teammates for hackathons and technical projects can be difficult.
+
+People often have different skills, but there is no simple way to discover complementary teammates, connect with them, form a team, and communicate in one workflow.
+
+## 💡 Solution
+
+HackMate brings teammate discovery, skill matching, connection requests, project creation, team management, and real-time messaging together in a single platform.
+
+## ✨ Key Features
+
+- 👤 User authentication
+- 🔎 Discover potential teammates
+- 🧠 Skill-based teammate matching
+- 🤝 Connection requests and acceptance
+- 🚀 Create and manage hackathon projects
+- 👥 Team formation and management
+- 💬 Real-time private messaging
+- 🔄 Persistent conversations
+- 📝 Profile editing and skill management
+- 📱 Responsive modern interface
+
+## 💬 CometChat Integration
+
+HackMate uses **CometChat** for real-time private communication between accepted teammates.
+
+The integration includes:
+
+- CometChat authentication
+- Private 1-to-1 messaging
+- Real-time message delivery
+- Conversation persistence
+- Secure server-side authentication token generation
+- Supabase Edge Function for CometChat authentication
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend & Services
+
+- Supabase
+- Supabase Authentication
+- Supabase Database
+- Supabase Edge Functions
+
+### Real-Time Communication
+
+- CometChat
+
+### Deployment
+
+- Vercel
+
+### Development
+
+- Git
+- GitHub
+- CometChat Skills / MCP-powered development workflow
+
+## 🔐 Architecture
+
+The application uses Supabase for authentication, database operations, and server-side functions.
+
+CometChat authentication is handled through a Supabase Edge Function so sensitive CometChat credentials are not exposed in the frontend.
+
+```text
+User
+  │
+  ▼
+HackMate React App
+  │
+  ├── Supabase Auth
+  │
+  ├── Supabase Database
+  │
+  └── Supabase Edge Function
+            │
+            ▼
+        CometChat
+            │
+            ▼
+     Real-Time Messaging
